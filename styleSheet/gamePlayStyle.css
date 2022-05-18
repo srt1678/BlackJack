@@ -1,0 +1,265 @@
+.playerList{
+    display: none;
+}
+.dealerArea{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    margin-left: 0px;
+}
+.dealerOverall{
+    display: flex;
+    justify-content: center;
+    margin-right: 50px;
+    margin-top: 15px;
+    height: 10px;
+}
+.dealerInfo{
+    display: block;
+    margin-bottom: 100px;
+}
+.dealerInfo,
+.playerInfo{
+    position: relative;
+}
+.dealerNameContainer{
+    position: absolute;
+    top: 10px;
+    left: -8px;
+}
+.dealerName{
+    font-size: 25px;
+    text-shadow: 1px 1px 10px black;
+}
+.dealerCards{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: 100px;
+}
+.dealerHiddenCard{
+    width: 100px;
+    height: 139px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.dealerSingleCardStyle,
+.dealerAdditionalCard{
+    width: 100px;
+    margin-right: 10px;
+}
+.renderDealerSumChip{
+    height: 60px;
+    width: 60px;
+    margin-top: 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dealerButtonOverall{
+    color: white;
+    height: 40px;
+    border-radius: 8px;
+    border: solid;
+    border-color: white;
+    border-width: 1px;
+    font-size: 15px;
+    font-weight: bold;
+    outline: none;
+    overflow: hidden;
+    background-color: transparent;
+    transition: color 0.3s;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    margin-left: 35px;
+}
+.dealerButtonOverall:hover{
+    color: rgb(70, 69, 69);
+    background-color: white;
+    cursor: pointer;
+}
+.dealerBustedSumDisplay{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    background-color: black;
+    opacity: 0.8;
+    left: 0px;
+    top: 0px;
+}
+
+
+.chipPic{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+.playerArea{
+    margin-left: 12px;
+}
+.player1Overall, 
+.player2Overall,
+.player3Overall,
+.player4Overall{
+    display: inline-block;
+    position: relative;
+    height: 450px;
+    width: 350px;
+}
+.playerInfo1,
+.playerInfo4{
+    margin-left: 15px;
+    position: absolute;
+    bottom: 100px;
+}
+.playerInfo2,
+.playerInfo3{
+    display: flex;
+    margin-left: 15px;
+    position: absolute;
+    bottom: 15px;
+}
+.playerInfoContainer{
+    position: absolute;
+    top: 12px;
+    left: -8px;
+}
+.playerName{
+    width: 80px;
+    position: absolute;
+    font-size: 20px;
+    text-shadow: 1px 1px 10px black;
+}
+.border{
+    position: absolute;
+    border-bottom: 1px solid white;
+    border-color: white;
+    width: 210px;
+    height: 10px;
+    bottom: -38px;
+    left: 30px;
+}
+.playerMoneyDiv{
+    position: absolute;
+    display: flex;
+    color: white;
+    width: 150px;
+    font-size: 18px;
+    font-style: italic;
+    text-shadow: 1px 1px 10px black;
+    bottom: -35px;
+    left: 90px;
+}
+.playerBetAmount{
+    width: 80px;
+}
+.playerBetSlash{
+    width: 20px;
+}
+.playerMoney{
+    width: 90px;
+}
+
+.playerCardContainer{
+    display: flex;
+    position: absolute;
+    bottom: 150px;
+    left: 100px;
+}
+.player2Overall .playerCardContainer,
+.player3Overall .playerCardContainer{
+    bottom: 60px;
+}
+.singleCardStyle{
+    width: 100px;
+}
+.player2Overall .playerTotalSumOverall,
+.player3Overall .playerTotalSumOverall{
+    bottom: 90px;
+}
+.playerTotalSumOverall{
+    position: absolute;
+    bottom: 180px;
+    left: 10px;
+}
+.renderSumChip{
+    height: 60px;
+    width: 60px;
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sumBlackChips{
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+.blackChipsSumText{
+    position: absolute;
+    font-size: 45px;
+    text-shadow: 0px 0px 3px white;
+}
+.bustedSumDisplay{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    background-color: black;
+    opacity: 0.8;
+}
+
+
+
+.player2Overall .buttonOverall,
+.player3Overall .buttonOverall{
+    bottom: -40px;
+}
+
+.buttonOverall{
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    display: flex;
+    width: 220px;
+    height: 30px;
+    justify-content: center;
+}
+.hitButtonDisplay,
+.standButtonDisplay,
+.doubleButtonDisplay{
+    color: white;
+    border-radius: 8px;
+    border: solid;
+    border-color: white;
+    border-width: 1px;
+    font-size: 15px;
+    font-weight: bold;
+    outline: none;
+    overflow: hidden;
+    background-color: transparent;
+    transition: color 0.3s;
+    transition: background-color 0.3s;
+}
+.hitButtonDisplay:hover,
+.standButtonDisplay:hover,
+.doubleButtonDisplay:hover{
+    color: rgb(70, 69, 69);
+    background-color: white;
+    cursor: pointer;
+}
+.hitButtonDisplay{
+    margin-left: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.standButtonDisplay,
+.doubleButtonDisplay{
+    margin-left: 10px;
+}

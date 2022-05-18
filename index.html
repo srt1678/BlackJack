@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        BlackJack
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styleSheet/preGameStyle.css">
+    <link rel="stylesheet" href="styleSheet/gamePlayStyle.css">
+</head>
+<body id="body">
+    <div id = "dealer"></div>
+    <div class="playerBetsListContainer" id = "playerBetsList">
+        <header class="gameTitle">
+            Welcome to Blackjack
+        </header>
+        <header class="placeBetsTitle" id="preGameTitle">
+        </header>
+        <div class="chipsInfoContainer">
+            <div class="prePlayerContainer1">
+                <div class="displayContainer">
+                    <img class="pic" src="pokerChips/redChips2.jpg">
+                    <div class="prePlayerInfoContainer">
+                        <div class="prePlayerName" id="prePlayerName1">
+                        </div>
+                        <div>
+                            <input class="betBar" id="player1Bar" type="text" placeholder="$1000">
+                            <div class="preAmount" id="player1TotalAmount">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="prePlayerContainer2">
+                <div class="displayContainer">
+                    <img class="pic" src="pokerChips/blueChips2.jpg">
+                    <div class="prePlayerInfoContainer">
+                        <div class="prePlayerName" id="prePlayerName2">
+                        </div>
+                        <div>
+                            <input class="betBar" id="player2Bar" type="text" placeholder="$1000">
+                            <div class="preAmount" id="player2TotalAmount">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="prePlayerContainer3">
+                <div class="displayContainer">
+                    <img class="pic" src="pokerChips/greenChips2.jpg">
+                    <div class="prePlayerInfoContainer">
+                        <div class="prePlayerName" id="prePlayerName3">
+                        </div>
+                        <div>
+                            <input class="betBar" id="player3Bar" type="text" placeholder="$1000">
+                            <div class="preAmount" id="player3TotalAmount">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="prePlayerContainer4">
+                <div class="displayContainer">
+                    <img class="pic" src="pokerChips/yellowChips2.jpg">
+                    <div class="prePlayerInfoContainer">
+                        <div class="prePlayerName" id="prePlayerName4">
+                        </div>
+                        <div>
+                            <input class="betBar" id="player4Bar" type="text" placeholder="$1000">
+                            <div class="preAmount" id="player4TotalAmount">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="startInfoContainer">
+            <div class="startContainer">
+                <img class="startBtnPic" src="pokerChips/blackChips2.jpg">
+                <div class="startBtnContainer">
+                    <button class="startButton" id="startButton">
+                        Start
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="playerList" id = "playerList">
+            <section class="dealerArea" id="dealerArea">
+                <div class="dealerOverall">
+                    <div class="dealerInfo">
+                        <img class="chipPic" src="pokerChips/orangeChips2.jpg">
+                        <div class="dealerNameContainer">
+                            <div class="dealerName">
+                                Dealer
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dealerCards" id="dealerCards">
+
+                </div>
+                <div class="dealerTotalSumOverall" id="dealerTotalSumOverall">
+                        
+                </div>
+            </section>
+
+            <section class="playerArea" id="playerArea">
+                <div class="player1Overall">
+                    <div class="playerInfo1">
+                        <img class="chipPic" src="pokerChips/redChips2.jpg">
+                        <div class="playerInfoContainer">
+                            <div class="playerName">
+                                Player 1
+                            </div>
+                            <div class="border">    
+                            </div>
+                            <div class="playerMoneyDiv">
+                                <div class="playerBetAmount" id="playerBetAmount1">
+
+                                </div>
+                                <div class="playerBetSlash">
+                                    /
+                                </div>
+                                <div class="playerMoney" id="playerMoney1">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playerCardContainer" id="player1CardOverall">
+
+                    </div>
+                    <div class="playerTotalSumOverall" id="player1TotalSumOverall">
+                        
+                    </div>
+                    <div class="buttonOverall" id="player1ButtonOverall">
+                        
+                    </div>
+                </div>
+
+                <div class="player2Overall">
+                    <div class="playerInfo2">
+                        <img class="chipPic" src="pokerChips/blueChips2.jpg">
+                        <div class="playerInfoContainer">
+                            <div class="playerName">
+                                Player 2
+                            </div>
+                            <div class="border">    
+                            </div>
+                            <div class="playerMoneyDiv">
+                                <div class="playerBetAmount" id="playerBetAmount2">
+
+                                </div>
+                                <div class="playerBetSlash">
+                                    /
+                                </div>
+                                <div class="playerMoney" id="playerMoney2">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playerCardContainer" id="player2CardOverall">
+
+                    </div>
+                    <div class="playerTotalSumOverall" id="player2TotalSumOverall">
+                        
+                    </div>
+                    <div class="buttonOverall" id="player2ButtonOverall">
+
+                    </div>
+                </div>
+
+                <div class="player3Overall">
+                    <div class="playerInfo3">
+                        <img class="chipPic" src="pokerChips/greenChips2.jpg">
+                        <div class="playerInfoContainer">
+                            <div class="playerName">
+                                Player 3
+                            </div>
+                            <div class="border">    
+                            </div>
+                            <div class="playerMoneyDiv">
+                                <div class="playerBetAmount" id="playerBetAmount3">
+
+                                </div>
+                                <div class="playerBetSlash">
+                                    /
+                                </div>
+                                <div class="playerMoney" id="playerMoney3">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playerCardContainer" id="player3CardOverall">
+
+                    </div>
+                    <div class="playerTotalSumOverall" id="player3TotalSumOverall">
+                        
+                    </div>
+                    <div class="buttonOverall" id="player3ButtonOverall">
+
+                    </div>
+                </div>
+
+                <div class="player4Overall">
+                    <div class="playerInfo4">
+                        <img class="chipPic" src="pokerChips/yellowChips2.jpg">
+                        <div class="playerInfoContainer">
+                            <div class="playerName">
+                                Player 4
+                            </div>
+                            <div class="border">    
+                            </div>
+                            <div class="playerMoneyDiv">
+                                <div class="playerBetAmount" id="playerBetAmount4">
+
+                                </div>
+                                <div class="playerBetSlash">
+                                    /
+                                </div>
+                                <div class="playerMoney" id="playerMoney4">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playerCardContainer" id="player4CardOverall">
+
+                    </div>
+                    <div class="playerTotalSumOverall" id="player4TotalSumOverall">
+                        
+                    </div>
+                    <div class="buttonOverall" id="player4ButtonOverall">
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <script src = './render.js'></script>
+    <script src = './button.js'></script>
+    <script src = './setting.js'></script>
+    <script src = './game.js'></script>
+</body>
+</html>
